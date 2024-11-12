@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundSev - Upload and Share Sounds</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="sidebar">
+        <h1>soundsev</h1>
+        <ul>
+            <li><a href="#">home</a></li>
+        </ul>
+
+        <!-- Google Ads (Left) -->
+        <div class="ads-left">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <ins class="adsbygoogle"
+                style="display:block"
+                data-ad-client="ca-pub-XXXXXX"
+                data-ad-slot="XXXXXX"
+                data-ad-format="rectangle"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>Upload Your Sound</h2>
+            <p>Share sound effects, music, and memes with the world!</p>
+        </header>
+
+        <div class="upload-section">
+            <button class="upload-btn" id="uploadBtn" onclick="document.getElementById('file-input').click();">Upload Sound</button>
+            <input type="file" id="file-input" style="display: none;" onchange="uploadFile()" accept=".mp3, .wav" />
+            <p id="upload-status"></p>
+        </div>
+
+        <div class="uploaded-sounds" id="uploadedSounds"></div>
+
+        <footer>
+            <p>&copy; 2024 SoundSev. All rights reserved.</p>
+
+            <!-- Google Ads (Footer) -->
+            <div class="ads-footer">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <ins class="adsbygoogle"
+                    style="display:block"
+                    data-ad-client="ca-pub-XXXXXX"
+                    data-ad-slot="XXXXXX"
+                    data-ad-format="rectangle"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
